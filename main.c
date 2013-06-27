@@ -23,7 +23,6 @@ int main(int argc, char *argv[]) {
 	//Parses out the command-line options entered.
 	while ((ch = getopt(argc, argv, "i:o:h")) != EOF) {
 		switch(ch) {
-			//p.149
 			case 'i':
 				fileInput = true;
 				fileInputPath = strdup(optarg);
