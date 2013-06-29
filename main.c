@@ -63,4 +63,10 @@ int main(int argc, char *argv[]) {
 				break;
 		}
 	}
+
+	//Take care of memory allocated
+	free(fileInputPath);
+	free(fileOutputPath);
+
+	return 0;
 }
